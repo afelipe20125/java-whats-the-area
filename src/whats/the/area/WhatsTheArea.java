@@ -23,6 +23,10 @@ public class WhatsTheArea {
        surfaceArea += triangle();
        surfaceArea += square();
        surfaceArea -= square();
+       surfaceArea += parrallelogram();
+       surfaceArea += circle();
+       surfaceArea += circle();
+       surfaceArea += circle();
        
        System.out.println("The total area of michaels truck is "+ surfaceArea);
        
@@ -54,10 +58,26 @@ public class WhatsTheArea {
                 
             }
     
-    
+    public static int parrallelogram()
+            {
+      System.out.println("height of parreloegram");
+      int height = in.nextInt();
+      System.out.println("base of paraelogram");
+      int base = in.nextInt();
+      int area = (int)(base * height);
+      System.out.println("The area of this paralelogram is: "+ area);
+      return area;
   }
+    
+    public static double circle(){
+    
+    System.out.println("radius of circle");
+    double radius = in.nextDouble();
+    double area = (double)(radius * radius * Math.PI);
+    System.out.println("The area of this circle is: "+ area);
+    return area;
+    }
 
 
 
-
-
+}
